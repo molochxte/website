@@ -1,0 +1,33 @@
+---
+layout: base
+title: 'Nonprofit Information on North End Makerspace in Seattle, WA'
+description: Join a nonprofit makerspace in the north end of the greater Seattle area. We are an inclusive community who get together to learn, share, and grow.
+custom_css: 'body{background-color: #e9ecef;}'
+obsolete: true
+---
+<section class="jumbotron text-center mb-4 rounded-0">
+  <div class="container">
+    <h1 class="jumbotron-heading">Select Your Plan</h1>
+    <p class="lead text-muted">Below you can choose your makerspace membership tier. You will be taken to Stripe to
+      complete your transaction. <a href="https://nems.link/stripeaccount" target="_blank">You can manage your account
+        here</a> or by clicking "Login" in the top-right corner.</p>
+  </div>
+</section>
+
+<section class="bg-white pt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 bg-white mb-4">
+        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+        <stripe-pricing-table pricing-table-id="prctbl_1N2LqMA5eWjTMQtsIfJRCnf8"
+          publishable-key="pk_live_hnSNFEAiuL8CcINM6hTJHuNE004rLosgLs">
+        </stripe-pricing-table>
+        <br>
+        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+        <stripe-pricing-table pricing-table-id="prctbl_1N2Lt7A5eWjTMQtswN85y7hy"
+          publishable-key="pk_live_hnSNFEAiuL8CcINM6hTJHuNE004rLosgLs">
+        </stripe-pricing-table>
+      </div>
+    </div>
+  </div>
+</section>

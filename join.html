@@ -1,0 +1,443 @@
+---
+layout: base
+title: 'Join the North End Makerspace in Seattle, WA'
+description: 'Join a nonprofit makerspace in the north end of the greater Seattle area. We are an inclusive community who get together to learn, share, and grow.'
+custom_css: 'html { scroll-behavior: smooth; }'
+---
+<section class="jumbotron text-center mb-4 rounded-0">
+  <div class="container">
+    <h1 class="jumbotron-heading">Become a Member Today!</h1>
+    <p class="lead text-muted">When you join NEM, you become part of a collaborative community that shares resources,
+      knowledge, and tools. Below you will find our membership tiers and what they offer. If you purchase a full year at
+      once, your membership will be discounted one month. If you're still on the shelf, you can always <a
+        href={{ 'visit.html' | relative_url }}>visit the space</a>, <a href={{ 'events.html' | relative_url }}>come to one of our events</a>, or <a href={{ 'about.html' | relative_url }}>learn
+        more about our nonprofit</a> before making a decision. Please note all members must submit a background check
+      and all paid memberships include your whole household at no extra charge. More on this at the bottom of the page.
+    </p>
+  </div>
+</section>
+<!-- new table styles below - move to CSS -->
+<style>
+  table.plans {
+    table-layout: fixed;
+  }
+
+  sub a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  del {
+    color: var(--orange);
+    text-decoration-line: line-through;
+  }
+
+  .description {
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: normal;
+  }
+
+  .support {
+    color: inherit;
+    opacity: 0.6;
+  }
+
+  .support-sm {
+    color: inherit;
+    opacity: 0.6;
+    font-size: 80%;
+    clear: left;
+    display: block;
+  }
+
+  .plans td,
+  .plans th {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .plans i {}
+
+  th.feature {
+    font-weight: normal;
+    text-align: left;
+  }
+
+  .plan-yes {
+    color: var(--info);
+    font-size: 1.5rem;
+  }
+
+  .plan-no {
+    color: var(gray);
+    opacity: .4;
+  }
+
+  .rate div {
+    margin-top: 8px
+  }
+
+  .rate td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+</style>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 box-shadow text-center">
+        <div class="card-header h4 font-weight-bold text-uppercase">
+          Essential
+        </div>
+        <div class="card-body">
+          <p>For the maker who wants full access to the space but doesn't need all the flashy tools to get the job done!
+            The Essential membership gets you 24-hour access to the space and the unlimited use of untimed tools.</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0 pt-0 pb-4">
+          <a href="https://nem.wildapricot.org/join" target=_blank class="btn btn-primary">Apply Now</a>
+        </div>
+        <div class="card-footer">
+          <h4 class="font-weight-bold mb-0 text-uppercase">$45 / Month</h4><span class="text-muted">Discounted Year
+            Rate: $495</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 box-shadow text-center">
+        <div class="card-header h4 font-weight-bold text-uppercase">
+          Premium
+        </div>
+        <div class="card-body">
+          <p>Get your feet wet with 3D printing, lasercutting, or CNC woodworking! Includes everything in the Essential
+            membership, plus monthly credit towards timed tools at the makerspace.</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0 pt-0 pb-4">
+          <a href="https://nem.wildapricot.org/join" target=_blank class="btn btn-primary">Apply Now</a>
+        </div>
+        <div class="card-footer">
+          <h4 class="font-weight-bold mb-0 text-uppercase">$70 / Month</h4><span class="text-muted">Discounted Year
+            Rate: $770</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 box-shadow text-center">
+        <div class="card-header h4 font-weight-bold text-uppercase">
+          Ultimate
+        </div>
+        <div class="card-body">
+          <p>An all access plan for the busy maker or aspiring entrepreneur. Includes everything in Premium, unlimited
+            access to all our tools, and a load of other perks like early access to new features and tools.</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0 pt-0 pb-4">
+          <a href="https://nem.wildapricot.org/join" target=_blank class="btn btn-primary">Apply Now</a>
+        </div>
+        <div class="card-footer">
+          <h4 class="font-weight-bold mb-0 text-uppercase">$150 / Month</h4><span class="text-muted">Discounted Year
+            Rate: $1650</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<table width="100%" class="container table table-sm table-hover plans">
+  <thead>
+    <tr>
+      <th class="feature" scope="col" colspan="1"> </th>
+      <th class="essential" scope="col">
+        Essential
+      </th>
+      <th class="premium" scope="col">
+        Premium
+      </th>
+      <th class="ultimate" scope="col">
+        Ultimate
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="hrs-access">
+      <th class="feature">24-hour makerspace access</td>
+      <td class="essential">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+      <td class="premium">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+      <td class="ultimate">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+    </tr>
+    <tr class="untimed-tools">
+      <th class="feature">Untimed tools <sub><a href=#subs>1</a></sub></td>
+      <td class="essential">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+      <td class="premium">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+      <td class="ultimate">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+    </tr>
+    <tr class="timed-tools">
+      <th class="feature">Timed tools <sub><a href=#subs>2</a></sub></td>
+      <td class="essential"><span class="support-sm">Pay-as-you-go</span></td>
+      <td class="premium">
+        $50/mo credit
+        <span class="support-sm">then pay-as-you-go</span>
+      </td>
+      <td class="ultimate">Unlimited</td>
+    </tr>
+    <tr class="guest-pass">
+      <th class="feature">Monthly guest passes <sub><a href=#subs>3</a></sub></td>
+      <td class="essential">2</td>
+      <td class="premium">4</td>
+      <td class="ultimate">8</td>
+    </tr>
+    <tr class="voting">
+      <th class="feature">Nonprofit voting rights <sub><a href=#subs>4</a></sub></td>
+      <td class="essential">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+      <td class="premium">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+      <td class="ultimate">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+    </tr>
+    <tr class="discord">
+      <th class="feature">Member-only Discord channels</td>
+      <td class="essential">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+      <td class="premium">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+      <td class="ultimate">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+    </tr>
+    <tr class="class-discount">
+      <th class="feature">
+        Class discount
+        <span class="support-sm">10-25% off all classes</span>
+        </td>
+      <td class="essential">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+      <td class="premium">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+      <td class="ultimate">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+    </tr>
+    <tr class="partner-discount">
+      <th class="feature">Store Discounts <span class="support-sm"> at Rockler and TAP Plastics</span></td>
+      <td class="essential">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+      <td class="premium">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+      <td class="ultimate">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+    </tr>
+    <tr class="storage">
+      <th class="feature">Personal storage cubby</td>
+      <td class="essential">
+        <i class="plan-no bi bi-dash" title="Not included"></i>
+      </td>
+      <td class="premium">
+        <i class="support-sm" title="Included,"></i>
+        coming soon
+      </td>
+      </td>
+      <td class="ultimate">
+        <i class="support-sm" title="Included,"></i>
+        coming soon
+      </td>
+      </td>
+    </tr>
+    <tr class="common-room">
+      <th class="feature">Reserve common room</td>
+      <td class="essential">
+        <i class="plan-no bi bi-dash" title="Not included"></i>
+      </td>
+      <td class="premium">
+        <i class="support-sm" title="Included,"></i>
+        coming soon
+      </td>
+      <td class="ultimate">
+        <i class="support-sm" title="Included,"></i>
+        coming soon
+      </td>
+    </tr>
+    <tr class="beta">
+      <th class="feature">Makerspace beta features <sub><a href=#subs>5</a></sub></td>
+      <td class="essential">
+        <i class="plan-no" title="Not included"></i>
+      </td>
+      <td class="premium">
+        <i class="plan-no" title="Not included"></i>
+      </td>
+      <td class="ultimate">
+        <i class="plan-yes bi bi-check" title="Included"></i>
+      </td>
+    </tr>
+    <tr class="rate card-footer">
+      <th class="feature">
+        </td>
+      <td class="essential">
+        <a href="https://nem.wildapricot.org/join" target=_blank class="btn btn-primary">Apply Now</a>
+        <div>
+          $45<span class="text-muted"> / month</span><br />
+          <span class="support-sm">or</span>
+          <del>$550</del> $495<span class="text-muted"> / year</span>
+          <span class="support-sm">discounted year rate</span>
+        </div>
+      </td>
+      <td class="premium">
+        <a href="https://nem.wildapricot.org/join" target=_blank class="btn btn-primary">Apply Now</a>
+        <div>
+          $70<span class="text-muted"> / month</span><br />
+          <span class="support-sm">or</span>
+          <del>$840</del> $770<span class="text-muted"> / year</span>
+          <span class="support-sm">discounted year rate</span>
+        </div>
+      </td>
+      <td class="ultimate">
+        <a href="https://nem.wildapricot.org/join" target=_blank class="btn btn-primary">Apply Now</a>
+        <div>
+          $150<span class="text-muted"> / month</span><br />
+          <span class="support-sm">or</span>
+          <del>$1800</del> $1650<span class="text-muted"> / year</span>
+          <span class="support-sm">discounted year rate</span>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="container">
+  <div class="row">
+    <ul class="list-group mb-4">
+      <li class="list-group-item text-muted" id=subs><b>1.</b> Some tools require training before they can be used
+        safely.</li>
+      <li class="list-group-item text-muted"><b>2.</b> Certain tools cost a great deal to keep maintained or use a
+        non-insignificant amount of power or materials when running. These include laser cutters, cnc woodshop devices,
+        and 3D printers. These tools are considered timed tools and are billed for their use unless you're on an
+        unlimited membership. We will work our hardest to make sure these services are affordable and equitable. Monthly
+        tool credits do not roll over to the next use period.</li>
+      <li class="list-group-item text-muted"><b>3.</b> Guests cannot use tools and must be chaperoned by an existing
+        member who are responsible for their behavior. Additional passes available to members <a
+          href="{{ 'visit.html' | relative_url }}">here</a>.</li>
+      <li class="list-group-item text-muted"><b>4.</b> Voting rights are on specific board decisions (per <a
+          target=_blank href="https://nems.link/docs">our bylaws</a>) and come into effect after either a year of
+        monthly membership or paying one year at once.</li>
+      <li class="list-group-item text-muted"><b>5.</b> From time to time we will have new tools, features, and trainings
+        we will release initially to just our Ultimate and above memberships.</li>
+    </ul>
+  </div>
+</div>
+
+<section class="jumbotron text-center mb-4 rounded-0">
+  <div class="container">
+    <h1 class="jumbotron-heading">Go the Extra Mile.</h1>
+    <p class="lead text-muted">Everyone has something to contribute, and these additional plans help accommodate those
+      that cannot participate due to financial strain or those that would like to contribute a little more than what is
+      required. We also offer easy ways to <a href="{{ 'volunteer.html' | relative_url }}">volunteer</a> or <a href="{{ 'donate.html' | relative_url }}">donate to
+        us</a>.</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 box-shadow text-center">
+        <div class="card-header h4 font-weight-bold text-uppercase">
+          Patron
+        </div>
+        <div class="card-body">
+          <p class="card-text">Our Patrons are members whose additional contribution helps us tackle larger projects and
+            expansions to the space. Patrons get everything at the Ultimate tier as well as unlimited guest passes,
+            payment-optional classes, and the pride of sponsoring a Community Supported member. They also have the
+            option of receiving public recognition in both our physical space and annual reports. Finally, our Patrons
+            are invited to participate in a yearly brunch hosted by our board.</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0 pt-0 pb-4">
+          <a href="https://nem.wildapricot.org/join" target=_blank class="btn btn-primary">Become a Patron</a>
+        </div>
+        <div class="card-footer">
+          <h4 class="font-weight-bold mb-0 text-uppercase">$3950 / Year</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 box-shadow text-center">
+        <div class="card-header h4 font-weight-bold text-uppercase">
+          Sponsor
+        </div>
+        <div class="card-body">
+          <p class="card-text">This program is for those that want to support a fellow maker who wouldn't otherwise be
+            able to access the makerspace. Funds from Sponsors are earmarked for tool time and training cost assistance
+            for members in need. Your patronage also helps support North End Makers in our mission to provide an
+            inclusive space for people to learn, create, and grow.</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0 pt-0 pb-4">
+          <a href="https://nems.link/sponsor" target=_blank class="btn btn-primary">Sponsor a Maker</a>
+        </div>
+        <div class="card-footer">
+          <h4 class="font-weight-bold mb-0 text-uppercase">$45 / Month</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 box-shadow text-center">
+        <div class="card-header h4 font-weight-bold text-uppercase">
+          Community Supported
+        </div>
+        <div class="card-body">
+          <p class="card-text">Our Community Supported memberships are for makers who are unable to reliably afford an
+            Essential membership without significant hardship. These plans are subsidized by other memberships as well
+            as our kind donors. There is a 2 week waiting period for new membership signups. Community Supported
+            memberships are a six month commitment, but members may submit their renewal up to one month before the end
+            of their plan to avoid the 2 week waiting period</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0 pt-0 pb-4">
+          <a href="https://nems.link/hardship" target=_blank class="btn btn-primary">Join our Waiting List</a>
+        </div>
+        <div class="card-footer">
+          <h4 class="font-weight-bold mb-0 text-uppercase">Free</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="jumbotron text-center mb-0 rounded-0">
+  <div class="container">
+    <h1 class="jumbotron-heading">The Fine Print</h1>
+    <p class=""><b>All paid memberships encompass your whole household</b>, with some stipulations. Household means all
+      people with the same physical address and additional household members will need to complete a one-time background
+      check ($39) and pay for an additional RFID key ($5).</p>
+    <p class=""><b>During the membership application, prospective members will perform a background check.</b>
+      Background checks are done by Sterling Volunteers and paid for by the applicant ($39) though that fee is waived if
+      you have used Sterling for a previous check. "Failing" the background check does not mean you will not be a
+      member, just that we cannot issue the membership immediately. Additional conversations will have to take place.
+    </p>
+    <p class=""><b>We are 100% volunteer-run.</b> All members are part of the North End Makers community and expected to
+      take part in the upkeep of the space and community.</p>
+    <p class=""><b>Proof of COVID-19 vaccine required for entry.</b> We are committed to the health and safety of our
+      members and volunteers. We require space entrants to follow federal, state, and local guidelines for masking and
+      distancing.</p>
+    <p class=""><b>Minors must be chaperoned by guardians at all times.</b> Household minors do not require a guest
+      pass, but may not have their own key. Any trained tools (woodshop, lasercutter, etc) would require training as
+      well as guardian consent to use, and may have age limits depending on their relative danger. All attendees of any
+      age must be vaccinated.</p>
+  </div>
+</section>

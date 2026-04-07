@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="{{ 'index.html' | relative_url }}">
+        <img src="{{ 'images/gear.png' | relative_url }}" width="30" height="30" class="d-inline-block align-top" alt="">
+        North End Makerspace
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ 'index.html' | relative_url }}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ 'join.html' | relative_url }}">Join</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Visit
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ 'visit.html' | relative_url }}">See Our Space</a>
+                    <a class="dropdown-item" href="{{ 'events.html' | relative_url }}">Events</a>
+                    <a class="dropdown-item" href="{{ 'community.html' | relative_url }}">Community</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ 'tool-training.html' | relative_url }}">Tool Training</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Help
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ 'donate.html' | relative_url }}">Donate</a>
+                    <a class="dropdown-item" href="{{ 'volunteer.html' | relative_url }}">Volunteer</a>
+                    <a class="dropdown-item" href="https://nems.link/instructor">Teach</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ 'conduct.html' | relative_url }}">Code of Conduct</a>
+                    <a class="dropdown-item" href="{{ 'about.html' | relative_url }}">Nonprofit Information</a>
+                    <a class="dropdown-item" target=_blank href="https://nems.link/docs">Public Documents</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline">
+            <!--<a target=_blank href="https://recursion.space/panel">-->
+            <a target=_blank href="https://wiki.northendmakers.org">
+                <button class="btn btn-outline-success" type="button">Wiki</button></a>&nbsp;<a target=_blank
+                href="https://nem.wildapricot.org/Sys/Profile">
+                <button class="btn btn-outline-primary" type="button">Login</button></a>
+        </form>
+    </div>
+</nav>

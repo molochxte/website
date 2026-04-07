@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Primary Meta Tags -->
+    <title>{{ page.title }}</title>
+    <meta name="title" content="{{ page.title }}">
+    <meta name="description" content="{{ page.description}}">
+
+    <!-- Open Graph / Facebook Linking -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://northendmakers.org/">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description}}">
+    <meta property="og:image" content="https://northendmakers.org/images/cardlogowhite.png">
+
+    <!-- Twitter Linking -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://northendmakers.org/">
+    <meta property="twitter:title" content="{{ page.title }}">
+    <meta property="twitter:description" content="{{ page.description}}">
+    <meta property="twitter:image" content="https://northendmakers.org/images/cardlogowhite.png">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="ltuvW3cOVy0ne3TTZcq3PmnKbgqy8nuLtV97zEemtQU" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ 'favicon/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ 'favicon/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ 'favicon/site.webmanifest' | relative_url }}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+
+    <!-- Mailchimp -->
+    <script
+        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/ed8972d317e49684de7a20495/fed3605d27091a14d7b33dc5a.js");</script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    {% if page.custom_css %}
+    <style>
+        {{ page.custom_css }}
+    </style>
+    {% endif %}
+</head>
+
+<body>
+    {%- include header.html -%}
+
+    <main role="main">
+        {{ content }}
+    </main>
+
+    {%- include footer.html -%}
+
+</body>
+
+</html>
