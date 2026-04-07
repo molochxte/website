@@ -1,0 +1,25 @@
+# Appears, in order, on about.html
+
+- name: Andrew Gordon
+  title: President
+  email: president@northendmakers.org
+
+- name: Gabrielle Fitzgibbon
+  title: Vice President
+  email: vp@northendmakers.org
+
+- name: Katie Feldman
+  title: Secretary
+  email: secretary@northendmakers.org
+
+- name: George Gosieski
+  title: Treasurer
+  email: treasurer@northendmakers.org
+
+- name: TJ Telan
+  title: Director
+  email: tjt@northendmakers.org
+
+- name: Baron Oldenburg
+  title: Director
+  email: barono@northendmakers.org

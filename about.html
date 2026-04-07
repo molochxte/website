@@ -39,18 +39,9 @@ custom_css: 'body {background-color: #e9ecef;}'
         <div class="card-body">
           <h4 class="card-title">Our Current Board</h4>
           <p class="card-text">
-            <!--                  (clockwise from top)<br>-->
-            <a target=_blank class=text-primary href="mailto:president@northendmakers.org">Andrew Gordon</a>, President
-            <br><a target=_blank class=text-primary href="mailto:vp@northendmakers.org">Gabrielle Fitzgibbon</a>, Vice
-            President
-            <br><a target=_blank class=text-primary href="mailto:secretary@northendmakers.org">Katie Feldman</a>,
-            Secretary
-            <br><a target=_blank class=text-primary href="mailto:treasurer@northendmakers.org">George Gosieski</a>,
-            Treasurer
-            <br><a target=_blank class=text-primary href="mailto:tjt@northendmakers.org">TJ Telan</a>, Director
-            <br><a target=_blank class=text-primary href="mailto:barono@northendmakers.org">Baron Oldenburg</a>,
-            Director
-            <br>
+            {% for board_member in site.data.board_members %}
+            <a target=_blank class=text-primary href="mailto:{{ board_member.email }}">{{ board_member.name }}</a>, {{ board_member.title }}<br>
+            {% endfor %}
             <br>You can reach the entire board at <a target=_blank class=text-primary
               href="mailto:board@northendmakers.org">board@northendmakers.org</a>
           </p>
