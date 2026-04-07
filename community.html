@@ -4,6 +4,19 @@ title: 'Community at North End Makerspace in Seattle, WA'
 description: 'Join a nonprofit makerspace in the north end of the greater Seattle area. We are an inclusive community
 who get together to learn, share, and grow.'
 custom_css: 'html {scroll-behavior: smooth;}'
+images:
+- images/grams/gram01.png
+- images/grams/gram02.png
+- images/grams/gram03.png
+- images/grams/gram04.png
+- images/grams/gram05.png
+- images/grams/gram06.png
+- images/grams/gram07.png
+- images/grams/gram08.png
+- images/grams/gram09.png
+- images/grams/gram10.png
+- images/grams/gram11.png
+- images/grams/gram12.png
 ---
 <section class="jumbotron text-center mb-4 rounded-0">
   <div class="container">
@@ -16,50 +29,15 @@ custom_css: 'html {scroll-behavior: smooth;}'
 </section>
 
 <div class="container">
-  <div class="row">
+  {% for file in page.images %}
+  {% assign index = forloop.index0 | modulo: 3 %}
+  {% if index == 0 %}<div class="row">{% endif %}
     <div class="col-md-4 mb-4">
-      <img src="images/grams/gram01.png" class="img-fluid" alt="instagram caption">
+      <img src="{{ file | relative_link }}" class="img-fluid" alt="instagram caption">
     </div>
-    <div class="col-md-4 mb-4">
-      <img src="images/grams/gram02.png" class="img-fluid" alt="instagram caption">
-    </div>
-    <div class="col-md-4 mb-4">
-      <img src="images/grams/gram03.png" class="img-fluid" alt="instagram caption">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 mb-4">
-      <img src="images/grams/gram04.png" class="img-fluid" alt="instagram caption">
-    </div>
-    <div class="col-md-4 mb-4">
-      <img src="images/grams/gram05.png" class="img-fluid" alt="instagram caption">
-    </div>
-    <div class="col-md-4 mb-4">
-      <img src="images/grams/gram06.png" class="img-fluid" alt="instagram caption">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 mb-4">
-      <img src="images/grams/gram07.png" class="img-fluid" alt="instagram caption">
-    </div>
-    <div class="col-md-4 mb-4">
-      <img src="images/grams/gram08.png" class="img-fluid" alt="instagram caption">
-    </div>
-    <div class="col-md-4 mb-4">
-      <img src="images/grams/gram09.png" class="img-fluid" alt="instagram caption">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 mb-4">
-      <img src="images/grams/gram10.png" class="img-fluid" alt="instagram caption">
-    </div>
-    <div class="col-md-4 mb-4">
-      <img src="images/grams/gram11.png" class="img-fluid" alt="instagram caption">
-    </div>
-    <div class="col-md-4 mb-4">
-      <img src="images/grams/gram12.png" class="img-fluid" alt="instagram caption">
-    </div>
-  </div>
+    {% if index == 2 or forloop.last %}
+  </div>{% endif %}
+  {% endfor %}
 </div>
 
 <section class="jumbotron text-center mb-0 rounded-0">

@@ -7,11 +7,17 @@ custom_css: '
 html { scroll-behavior: smooth; }
 .text-orange { color: #d35500; }
 .link-white a { color: white; }'
+gallery_images:
+- images/gallery/01.jpg
+- images/gallery/02.jpg
+- images/gallery/03.jpg
+- images/gallery/04.jpg
+- images/gallery/05.jpg
+- images/gallery/08.jpg
+- images/gallery/10.jpg
+- images/gallery/11.jpg
 ---
 <div class="mb-0">
-    {% assign files = site.static_files
-    | where_exp: "f", "f.path contains '/images/gallery/'"
-    | sort:"order" %}
     <style>
         #gallery button {
             background: transparent;
@@ -26,15 +32,15 @@ html { scroll-behavior: smooth; }
     </style>
     <div id="gallery" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            {% for file in files %}
+            {% for image in page.gallery_images %}
             <li data-target="#gallery" data-slide-to="{{ forloop.index0 }}" {% if forloop.index0==0 %} class="active" {%
                 endif %}></li>
             {% endfor %}
         </ol>
         <div class="carousel-inner">
-            {% for file in files %}
+            {% for image in page.gallery_images %}
             <div class="carousel-item{% if forloop.index0 == 0 %} active{% endif %}">
-                <img src="{{ file.path | remove_first:'/' }}" class="d-block w-100">
+                <img src="{{ image | relative_link }}" class="d-block w-100">
             </div>
             {% endfor %}
         </div>
