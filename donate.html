@@ -110,20 +110,6 @@ custom_css: 'html {scroll-behavior: smooth;}'
     <p class="lead text-muted">You can find information about us and our mission as well as contact information on <a
         href="{{ 'about.html' | relative_url }}">our about page</a>. You can also check out our various social channels using one of the links
       below.</p>
-    <a target=_blank data-toggle="tooltip" data-placement="bottom" title="Instagram"
-      href="https://nems.link/instagram"><i class="bi-instagram" style="font-size: 3rem; color: #007bff;" role="img"
-        aria-label="Instagram"></i></a>&nbsp;&nbsp;
-    <a target=_blank data-toggle="tooltip" data-placement="bottom" title="Discord" href="https://nems.link/discord"><i
-        class="bi-discord" style="font-size: 3rem; color: #6c757d;" role="img"
-        aria-label="Discord"></i></a>&nbsp;&nbsp;
-    <a target=_blank data-toggle="tooltip" data-placement="bottom" title="Facebook"
-      href="https://nems.link/facebook"><i class="bi-facebook" style="font-size: 3rem; color: #007bff;" role="img"
-        aria-label="Facebook"></i></a>&nbsp;&nbsp;
-    <a target=_blank data-toggle="tooltip" data-placement="bottom" title="Twitter" href="https://nems.link/twitter"><i
-        class="bi-twitter" style="font-size: 3rem; color: #6c757d;" role="img"
-        aria-label="Twitter"></i></a>&nbsp;&nbsp;
-    <a target=_blank data-toggle="tooltip" data-placement="bottom" title="Mailing List"
-      href="https://nems.link/mail"><i class="bi-envelope" style="font-size: 3rem; color: #007bff;" role="img"
-        aria-label="Twitter"></i></a>&nbsp;&nbsp;
+      {%- include socials.html -%}
   </div>
 </section>
