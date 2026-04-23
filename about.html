@@ -3,9 +3,8 @@ layout: base
 title: 'Nonprofit Information on North End Makerspace in Seattle, WA'
 description: 'Join a nonprofit makerspace in the north end of the greater Seattle area. We are an inclusive community
 who get together to learn, share, and grow.'
-custom_css: 'body {background-color: #e9ecef;}'
 ---
-<section class="jumbotron bg-white text-center mb-4 rounded-0">
+<section class="jumbotron bg-white text-center rounded-0">
   <div class="container">
     <h1 class="jumbotron-heading">Our Mission</h1>
     <p class="lead text-muted">Our mission is to provide a friendly, inclusive, and affordable creative space and the
@@ -16,7 +15,8 @@ custom_css: 'body {background-color: #e9ecef;}'
   </div>
 </section>
 
-<div class="container">
+<section class="jumbotron p-0 pt-4">
+  <div class="container">
   <div class="row">
     <div class="col-md-6 mb-4">
       <div class="card h-100 box-shadow">
@@ -50,15 +50,16 @@ custom_css: 'body {background-color: #e9ecef;}'
     </div>
   </div>
 </div>
+</section>
 
 <section class="jumbotron bg-white text-center mb-0 rounded-0">
   <div class="container">
     <h1 class="jumbotron-heading">More Information</h1>
     <p class="lead text-muted"><span class="text-secondary font-weight-bold">North End Makers is all-volunteer
         run.</span> We are opening a makerspace in the Pinehurst neighborhood of North Seattle. If you would like to
-      become a part of this community, please <a href="{{ 'join.html' | relative_url }}">consider joining us</a>.</p>
+      become a part of this community, please <a href="{{ 'join' | relative_url }}">consider joining us</a>.</p>
     <p class="lead text-muted">We have lots more public information available, click a link below to learn more.</p>
-    <a href="{{ 'conduct.html' | relative_url }}" class="btn btn-primary my-2">Code of Conduct</a>&nbsp;&nbsp;&nbsp;
+    <a href="{{ 'conduct' | relative_url }}" class="btn btn-primary my-2">Code of Conduct</a>&nbsp;&nbsp;&nbsp;
     <a href="https://nems.link/docs" target=_blank class="btn btn-secondary my-2">Public Documents</a>
   </div>
 </section>
